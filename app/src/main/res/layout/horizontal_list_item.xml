@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="210dp"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/ex_draw1">
+
+    <ImageView
+        android:id="@+id/img_h_photo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/regular_burger"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_h_photo"
+        android:background="@drawable/ex_draw2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+         android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_h_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/audiowide"
+        android:text="Chese Burger"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins"
+                android:text="using chese mozarella "
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:typeface="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_h_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Rp.45.000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
