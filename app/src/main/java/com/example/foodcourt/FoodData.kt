@@ -8,7 +8,7 @@ object FoodData {
             "Regular Burger",
             "Chicken Burger",
             "Chesse Burger",
-            "Double Chesse Burger",
+            "Double Chesse \nBurger",
             "Regular Pizza",
             "Beef Pizza",
             "Spesial Pizza"

@@ -14,8 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodCourt">
         <uses-library
-            android:name="com.google.android.wearable"
-            android:required="false" />
+            android:name="com.google.android.maps"
+            android:required="false"/>
 
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld
@@ -26,10 +26,22 @@
             android:value="true" />
 
         <activity
-            android:name=".DetailActivity"
-            android:label="@string/title_activity_detail">
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile">
 
         </activity>
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+
+        <activity
+            android:name=".VertikalDetail"
+            android:label="@string/title_activity_horizontal_detail" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

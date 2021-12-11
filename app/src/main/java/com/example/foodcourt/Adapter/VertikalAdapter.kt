@@ -10,6 +10,10 @@ import com.example.foodcourt.Model.FoodModel
 import com.example.foodcourt.R
 
 class VertikalAdapter (val listfood:ArrayList<FoodModel>) :RecyclerView.Adapter<VertikalAdapter.ListViewHolder>(){
+    private lateinit var onItemClickCallback: VertikalAdapter.OnItemClickCallback
+    fun setOnItemClickCallback(onItemClickCallback: VertikalAdapter.OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
 
    inner class ListViewHolder(itemView:View):RecyclerView.ViewHolder(itemView) {
 
@@ -33,11 +37,16 @@ class VertikalAdapter (val listfood:ArrayList<FoodModel>) :RecyclerView.Adapter<
         holder.tvrating.text = food.rating
         holder.tvharga.text= food.harga
         holder.imgphoto.setImageResource(food.image)
+        holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listfood[holder.adapterPosition])
 
+        }
 
     }
 
     override fun getItemCount(): Int {
        return listfood.size
+    }
+    interface OnItemClickCallback {
+        fun onItemClicked(data: FoodModel)
     }
 }

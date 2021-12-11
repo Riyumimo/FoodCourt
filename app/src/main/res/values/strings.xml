@@ -8,4 +8,8 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="detail"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt.</string>
+    <string name="title_activity_detail2">DetailActivity2</string>
+    <string name="detail_aboutme_profile">Mahasiswa Aktif dengan spesialisasi di Teknik  informatika. Memiliki pengalaman dalam mengembangkan dan mengimplementasikan Komputer dan Bahasa Pemograman ,melalui kesempatan belajar  di Universitas. Mencari peluang kerja yang memberi kesempatan untuk semakin berkembang.”</string>
+    <string name="title_activity_horizontal_detail">HorizontalDetail</string>
+    <string name="title_activity_profile">ProfileActivity</string>
 </resources>

@@ -50,11 +50,12 @@
             android:text="BeefBurger"
             android:textSize="24sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_vd_harga"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/iv_vd_image" />
 
         <TextView
-            android:id="@+id/tv_harga"
+            android:id="@+id/tv_vd_harga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -86,13 +87,13 @@
                 android:src="@drawable/ic_baseline_star_24_orange" />
 
             <TextView
-                android:id="@+id/tv_rating"
+                android:id="@+id/tv_vd_rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:layout_weight="0"
                 android:fontFamily="@font/poppins"
-                android:text="10.0" />
+                android:text="TextView" />
 
             <ImageView
                 android:layout_width="20dp"
@@ -130,7 +131,7 @@
 
 
         <TextView
-            android:id="@+id/tv_detail"
+            android:id="@+id/tv_vd_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
